@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+.img-background{
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+    background-image: url("../components/image/contant.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ex-box{
+     display: flex;
+     justify-content: flex-end;
+}
+.title-index{ 
+    margin: 20% 0;
+    width: 40%;
+}
+.title-index h1{
+    color: #1A1A1A;
+    font-size: 40px;
+    line-height: 45.36px; 
+    width: 100%;
+  
+}
+.title-index p{
+    color: #1A1A1A;
+     line-height: 25.2px; 
+     font-size: 25px; 
+      width: 100%;
+}
+.btn{
+    background-color: #F9F9F9;
+    color: black;
+    font-size: 30px;
+    border-radius: 60px;
+    width: 320px;
+    height: 85px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+@media(max-width:567px){
+
+    .title-index{
+        width: 100%;
+        margin-top: 54%;
+        padding: 60px; 
+        color: #1A1A1A;
+    }
+    .title-index h1{
+        font-size: 25px;
+        line-height: 45.36px; 
+        width: 100%;
+    }
+    .title-index p{
+         line-height: 25.2px; 
+         font-size: 18px; 
+          width: 100%;
+    }
+    .btn{
+        background-color: #F9F9F9;
+        color: black;
+        font-size: 25px;
+        border-radius: 60px;
+        width: 230px;
+        height: 85px;
+        cursor: pointer;
+        margin-top: 70px;
+    }
+
+   
+}

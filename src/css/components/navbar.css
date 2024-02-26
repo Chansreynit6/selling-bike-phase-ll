@@ -1,0 +1,233 @@
+*{  
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    width: 767px;
+    margin: auto;
+}
+.menu-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    z-index: 3;
+}
+.logo a{
+    font-family: "Honk", system-ui;
+    font-weight: 400;
+    top: 16px;
+    left: 37px;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+}
+.menu-iteam{
+    /* z-index: 1; */
+    float: right;
+}
+.menu{
+    width: 250px;
+    background-color: #042331;
+    position: fixed;
+    right: -250px;
+    height: 100%;
+    transition: all .5s ease;
+}
+.menu header{
+    font-weight: 700;
+    font-size:22px ;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color: #063146;
+    user-select: none;
+}
+.menu ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size:20px ;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(255,255,255,.1);
+    border-bottom: 2px solid black;
+    transition: 0.4s;
+}
+.menu ul li:hover a{
+    padding-left: 50px;
+}
+.menu ul a i{
+    margin-right:16px ;
+}
+.home{
+    display: none;
+}
+#check{
+    display: none;
+    /* float: right; */
+}
+label #btn, label #cancel{
+
+    position: absolute;
+    cursor: pointer;
+    
+}
+label #btn{
+    right: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    right: -195px;
+    top: 17px;
+    font-size: 30px;
+    background-color: #042331;
+    border-radius: 3px;
+    color: white;
+    padding: 2px 4.5px;
+    transition: all .5s ease;
+}
+#check:checked ~ .menu{
+    right: 0;
+}
+#check:checked ~ label #btn{
+    right: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    right: 195px;
+}
+@media  screen and (max-width: 490px) {
+    body{
+        width: 490px;
+    }
+    .menu{
+        width: 250px;
+        right: -250px;
+    }
+}
+@media screen and (max-width: 430px) {
+    body{
+        width: 430px;
+    }
+    .menu{
+        width: 250px;
+        right: -250px;
+    }
+}
+@media screen and (max-width: 360px) {
+    body{
+        width: 360px;
+    }
+    .menu{
+        width: 250px;
+        right: -250px;
+    }
+}
+@media screen and (max-width: 390px) {
+    #check:checked ~label #cancel{
+        right: 180px;
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        width: 375px;
+    }
+    .menu{
+        width: 250px;
+        right: -250px;
+    }
+    #check:checked ~label #cancel{
+        right: 160px;
+    }
+    
+}
+@media screen and (max-width: 414px) {
+    body{
+        width: 414px;
+    }
+    .menu{
+        width: 250px;
+        right: -250px;
+    }
+    label #btn{
+        right: 40px;
+    }
+}
+@media screen and (min-width: 767px) {
+    body{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+        height: 100px;
+    }
+    .logo{
+        top: 25px;
+        left: 10%;
+    }
+    .menu{ 
+        width:250px ;
+        top: 40px;
+        right: 2%;
+        width: auto;
+        background-color: transparent;
+        box-sizing: content-box;
+        transition: none;
+        height: auto;
+    }
+    .menu header{
+        display: none;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li a{
+        transition: none;
+        box-sizing: border-box;
+        border: none;
+        /* padding-left:-20px ; */
+        /* padding-top: 20px; */
+        padding-left: 0;
+        padding: 0;
+        margin-right: 30px;
+        line-height: 1;
+    }
+    .menu ul li a i{
+        display: none;
+    }
+    label #btn, label #cancel{
+        display: none;
+    }
+    .menu ul li:hover a{
+        padding: 0;
+    }
+    .menu ul li a:hover{
+        border-bottom: 3px solid white;
+        width: auto;
+        border-radius: 1px;
+        padding: 0;
+        display: inline-block;
+    }
+    #home{
+        border-bottom: 3px solid white;
+        width: auto;
+        border-radius: 1px;
+        padding: 0;
+        display: inline-block;
+    }
+    #check{
+        display: none;
+    }
+}

@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+}
+.box-bar-bike{
+    margin: auto;
+    width: 300px;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.box-bar{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.txt{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.txt h2{
+    font-size: 48px;
+    line-height: 2;
+}
+.txt a{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 42px;
+}
+.txt p{
+    text-align: left;
+}
+.first{
+    display: none;
+}
+.second{
+    display: none;
+}
+.card{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.img{
+    margin: auto;
+    height: 65%;
+    width: 100%;
+}
+.img img{
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+.img img:hover{
+    scale: 105%;
+    transition: 1s;
+}
+.txt-card{
+    position: relative;
+    margin: auto;
+    width: 87%;
+    height: auto;
+}
+.txt-card :nth-child(3){
+    right: 0;
+    position: absolute;
+    bottom: 27px;
+    display: none;
+}
+.txt-card h3{
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.price{
+    margin-bottom: 40px;
+    line-height: 1;
+    position: relative;
+    text-align: left;
+}
+.price :nth-child(1){
+    text-decoration:2px black line-through;
+    color: gray;
+    font-size: 20px;
+}
+.price :nth-child(2){
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media screen and (min-width:660px){
+    body{
+        width: 100%;
+    }
+    .box-bar-bike{
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    .card-bar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px ;
+    }
+    .second{
+        display: none;
+    }
+    .first{
+        display: list-item;
+    }
+    .txt h2{
+        font-size: 56px;
+    }
+    .txt-card :nth-child(3){
+        display: list-item;
+        bottom: 27px;
+    }
+    .txt-card h3{
+        font-size: 25px;
+    }
+    .txt-card p{
+        font-size: 20px;
+    }
+    .txt a{
+        font-size: 18px;
+    }
+    .txt p{
+        font-size: 19px;
+        text-align: left;
+        width: 100%;
+    }
+    .img img{
+       width: 100%;
+       object-fit: contain;
+       padding: 20px;
+       height: 100%;
+    }
+    .price{
+        margin-bottom: 40px;
+        line-height: 1;
+        position: relative;
+        text-align: left;
+    }
+    .price :nth-child(1){
+        text-decoration:2px black line-through;
+        color: gray;
+        font-size: 23px;
+    }
+    .price :nth-child(2){
+        font-size: 26px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+}
+@media screen and (min-width:980px){
+    body{
+        width: 100%;
+    }
+    .box-bar-bike{
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    .card-bar{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px ;
+    }
+    .txt a{
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .txt p{
+        font-size: 23px;
+    }
+    .first{
+        display: list-item;
+    }
+    .second{
+        display: list-item;
+    }
+    .price{
+        bottom: 0;
+    }
+
+}
+@media screen and (min-width:1200px){
+    body{
+        width: 100%;
+    }
+    .box-bar-bike{
+        margin: auto;
+        width: 90%;
+        height: auto;
+    }
+    .txt a{
+        font-size: 22px;
+        top: 55px;
+    }
+    .txt h2{
+        font-size: 70px;
+    }
+    .txt p{
+        width: 45%;
+        font-size: 23px;
+    }
+}
+@media screen and (min-width:1400px){
+    .price{
+        bottom: 0;
+    }
+    .price :nth-child(1){
+        font-size: 25px;
+    }
+    .price :nth-child(2){
+        font-size: 30px;
+    }
+    .txt-card p{
+        font-size: 23px;
+    }
+    .txt-card h3{
+        font-size: 27px;
+    }
+    .txt a{
+        bottom: 15px;
+    }
+}
