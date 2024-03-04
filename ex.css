@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.box-bar-bike{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px 0px 0px 5px gainsboro;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+}
+.filter{
+    margin-left: 9%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 55px;
+}
+#options{
+    width: 6%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    margin-right: 20px;
+}
+#options2{
+    width: 10%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    margin-right: 100px;
+}
+input{
+    margin-left: 30%;
+    margin-top: 7%;
+    width: 500px;
+    padding: 20px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card-list{
+    /* display: flex; */
+    height: 350px;
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 1px gray;
+    box-shadow: 0px 0px 2px 1px gray;
+    /* margin: 20px 15px; */
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px 20px;
+    border-radius: 25px;
+}
+.card-list img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin: 15px 0px;
+}
+.card-list img:hover{
+    scale: 105%;
+    transition: 1s;
+}
+.card-list p{
+    text-align: right;
+}
+.box1 h1{
+    font-size: 40px;
+    margin-left:9% ;
+}
+.box2 h1{
+    font-size: 40px;
+    margin-left:9% ;
+}
+.box3 h1{
+    font-size: 40px;
+    margin-left:9% ;
+}
+.box4 h1{
+    font-size: 40px;
+    margin-left:9% ;
+}
+
+#card{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#card1{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#card2{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#card3{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-bar{
+    margin: auto;
+}
