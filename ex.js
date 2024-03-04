@@ -23,7 +23,7 @@ let road = [
 ]
 let gravel =[
     {
-    img: "../components/image/f8db6994435e2b5f27ab0a5660ece648.png",
+    img: "./components/image/f8db6994435e2b5f27ab0a5660ece648.png",
     name: "Gravel - Polygon",
     new:"",
     brand: "Tambora G4",
@@ -31,7 +31,7 @@ let gravel =[
     price: 650,
     },
     {
-    img: "../components/image/f7e8b9639a23d028d30ef0ea0afd72c0.png",
+    img: "./components/image/f7e8b9639a23d028d30ef0ea0afd72c0.png",
     name: "Gravel - Element",
     new1:"",
     brand1: "FRC38",
@@ -40,7 +40,7 @@ let gravel =[
     },
     
     {
-    img: "../components/image/119fa2e39e1bf7b7c5bd6acdd1db858c.png",
+    img: "./components/image/119fa2e39e1bf7b7c5bd6acdd1db858c.png",
     name: "Roadbike - Twitter",
     new2:"",
     brand2: "Aurora-Disc",
@@ -50,7 +50,7 @@ let gravel =[
 ]
 let mountain = [
     { 
-    img: "../components/image/e74d241d03cbc8f0c556931ca353a8ee.png",
+    img: "./components/image/e74d241d03cbc8f0c556931ca353a8ee.png",
     name: "MTB - United",
     new:"",
     brand: "Epsilon T6",
@@ -58,7 +58,7 @@ let mountain = [
     price: 3000,
     },
     {
-    img: "../components/image/d2a172549fd82bfe4b4e88dbd5d3080b.png",
+    img: "./components/image/d2a172549fd82bfe4b4e88dbd5d3080b.png",
     name: "MTB - Twitter",
     new:"",
     brand: "SX-12",
@@ -67,7 +67,7 @@ let mountain = [
     },
     
     {
-    img: "../components/image/345ec81186e0a150bd58687ee728e7d6.png",
+    img: "./components/image/345ec81186e0a150bd58687ee728e7d6.png",
     name: "MTB - Pacific",
     new:"",
     brand: "Skeleton 3.0",
