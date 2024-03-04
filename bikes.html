@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="footer/style.css">
-    <link rel="stylesheet" href="src/css/components/bikeshop.css">
+    <!-- <link rel="stylesheet" href="src/css/components/bikeshop.css"> -->
     <link rel="stylesheet" href="src/css/components/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="ex.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <section>
         <div class="menu-bar">
-            <div class="logo"><a href="">G#2</a></div>
+            <div class="logo"><a href="index.html">G#5</a></div>
             <div class="menu-iteam">
                  <input type="checkbox" id="check">
                  <label for="check">
@@ -38,11 +39,44 @@
 
     <section>
         <div class="box-bar-bike">
-            <div id="product-list">
-    
-            </div>
+            <label class="filter" for="options">Filter By</label>
+            <select id="options">
+                <option id="road" value="road">Road</option>
+                <option value="gravel">Gravel</option>
+                <option value="maountain">Mountain</option>
+                <option value="folding">Folding</option>
+              </select>
+              <select id="options2">
+                <option value="condition">Condition</option>
+                <option value="uncondition">Uncondition</option>
+              </select>
+            <input type="text" placeholder="live search..." id="myinput" >
         </div>
-        <script src="components/bikeshop.js"></script>
+    <div class="container">
+        <div class="box1">
+        <h3 id="para" style="display: none;">Not Found</h3>
+        <h1>Road</h1>
+        <div class="row" id="card">
+        </div>
+        </div>
+        <div class="box2">
+        <h3 id="para1" style="display: none;">Not Found</h3>   
+        <h1>Gravel</h1>
+        <div id="card2"></div>
+        </div>
+        <div class="box3">
+        <h3 id="para2" style="display: none;">Not Found</h3>
+        <h1>Mountain</h1>
+        <div id="card1">
+        </div>
+        </div>
+        <div class="box4">
+        <h3 id="para3" style="display: none;">Not Found</h3>
+        <h1>Folding</h1>
+        <div id="card3"></div>
+        </div>
+        </div>
+        <script src="ex.js"></script>
     </section>
 
 

@@ -122,64 +122,160 @@ let productlist = [
 
   },
 ];
-let txt = "";
-for (let y in productlist) {
-  txt += `
-  <div class="box-bar">
-  <div class="txt">
-      <h2>${productlist[y].type}</h2>
-      <a href="">View more</a>
-      <p>${productlist[y].inform}</p>
+showproduct(productlist);
+function showproduct(curray){
+  document.getElementById('product-list').innerText="";
+  for (var y=0;y<curray.length;y++){
+    document.getElementById('product-list').innerHTML +=`
+    <div class="box-bar">
+    <div class="txt">
+        <h2>${curray[y].type}</h2>
+        <a href="">View more</a>
+        <p>${curray[y].inform}</p>
+    </div>
+    <div class="card-bar">
+    <div class="card">
+        <div class="img">
+            <img src="${curray[y].img}" alt="">
+        </div>
+        <div class="txt-card">
+            <p>${curray[y].name}</p>
+            <h3>${curray[y].brand}</h3>
+            <h3>${curray[y].new}</h3>
+            <div class="price">
+                <p>${curray[y].discountprice}</p>
+                <p>${curray[y].newprice}</p>
+            </div>
+        </div>
+    </div>
+  
+    <div class="card first">
+        <div class="img">
+            <img src="${curray[y].img1}" alt="">
+        </div>
+        <div class="txt-card">
+            <p>${curray[y].name1}</p>
+            <h3>${curray[y].brand1}</h3>
+            <h3>${curray[y].new1}</h3>
+            <div class="price">
+                <p>${curray[y].discountprice1}</p>
+                <p>${curray[y].newprice1}</p>
+            </div>
+        </div>
+    </div>
+  
+    <div class="card second">
+        <div class="img">
+            <img src="${curray[y].img2}" alt="">
+        </div>
+        <div class="txt-card">
+            <p>${curray[y].name2}</p>
+            <h3>${curray[y].brand2}</h3>
+            <h3>${curray[y].new2}</h3>
+            <div class="price">
+                <p>${curray[y].discountprice2}</p>
+                <p>${curray[y].newprice2}</p>
+            </div>
+        </div>
+    </div>
+    </div>
   </div>
-  <div class="card-bar">
-  <div class="card">
-      <div class="img">
-          <img src="${productlist[y].img}" alt="">
-      </div>
-      <div class="txt-card">
-          <p>${productlist[y].name}</p>
-          <h3>${productlist[y].brand}</h3>
-          <h3>${productlist[y].new}</h3>
-          <div class="price">
-              <p>${productlist[y].discountprice}</p>
-              <p>${productlist[y].newprice}</p>
-          </div>
-      </div>
-  </div>
-
-  <div class="card first">
-      <div class="img">
-          <img src="${productlist[y].img1}" alt="">
-      </div>
-      <div class="txt-card">
-          <p>${productlist[y].name1}</p>
-          <h3>${productlist[y].brand1}</h3>
-          <h3>${productlist[y].new1}</h3>
-          <div class="price">
-              <p>${productlist[y].discountprice1}</p>
-              <p>${productlist[y].newprice1}</p>
-          </div>
-      </div>
-  </div>
-
-  <div class="card second">
-      <div class="img">
-          <img src="${productlist[y].img2}" alt="">
-      </div>
-      <div class="txt-card">
-          <p>${productlist[y].name2}</p>
-          <h3>${productlist[y].brand2}</h3>
-          <h3>${productlist[y].new2}</h3>
-          <div class="price">
-              <p>${productlist[y].discountprice2}</p>
-              <p>${productlist[y].newprice2}</p>
-          </div>
-      </div>
-  </div>
-  </div>
-</div>
-  `;
+    `;
+  }
 }
-console.log(document.getElementById("product-list"));
-document.getElementById("product-list").innerHTML = txt;
-console.log(txt);
+
+
+
+// let txt = "";
+// for (let y in productlist) {
+//   txt += `
+//   <div class="box-bar">
+//   <div class="txt">
+//       <h2>${productlist[y].type}</h2>
+//       <a href="">View more</a>
+//       <p>${productlist[y].inform}</p>
+//   </div>
+//   <div class="card-bar">
+//   <div class="card">
+//       <div class="img">
+//           <img src="${productlist[y].img}" alt="">
+//       </div>
+//       <div class="txt-card">
+//           <p>${productlist[y].name}</p>
+//           <h3>${productlist[y].brand}</h3>
+//           <h3>${productlist[y].new}</h3>
+//           <div class="price">
+//               <p>${productlist[y].discountprice}</p>
+//               <p>${productlist[y].newprice}</p>
+//           </div>
+//       </div>
+//   </div>
+
+//   <div class="card first">
+//       <div class="img">
+//           <img src="${productlist[y].img1}" alt="">
+//       </div>
+//       <div class="txt-card">
+//           <p>${productlist[y].name1}</p>
+//           <h3>${productlist[y].brand1}</h3>
+//           <h3>${productlist[y].new1}</h3>
+//           <div class="price">
+//               <p>${productlist[y].discountprice1}</p>
+//               <p>${productlist[y].newprice1}</p>
+//           </div>
+//       </div>
+//   </div>
+
+//   <div class="card second">
+//       <div class="img">
+//           <img src="${productlist[y].img2}" alt="">
+//       </div>
+//       <div class="txt-card">
+//           <p>${productlist[y].name2}</p>
+//           <h3>${productlist[y].brand2}</h3>
+//           <h3>${productlist[y].new2}</h3>
+//           <div class="price">
+//               <p>${productlist[y].discountprice2}</p>
+//               <p>${productlist[y].newprice2}</p>
+//           </div>
+//       </div>
+//   </div>
+//   </div>
+// </div>
+//   `;
+// }
+// console.log(document.getElementById("product-list"));
+// document.getElementById("product-list").innerHTML = txt;
+// console.log(txt);
+
+
+
+
+document.getElementById('myinput').addEventListener("keyup",function(){
+  let text = document.getElementById('myinput').value;
+  productarray =productlist.filter(function(a){
+    if(a.name.includes(text)){
+      return a.name;
+    }
+    if(a.newprice.includes(text)){
+      return a.newprice;
+    }
+    if(a.new.includes(text)){
+      return a.new;
+    }
+  });
+  if(this.value == ""){
+    showproduct(productlist);
+  }
+  else{
+    if(productarray == ""){
+      document.getElementById('para').style.display='block';
+      document.getElementById("product-list").innerHTML = "";
+    }
+    else{
+      showproduct(productarray);
+      document.getElementById('para').style.display='none';
+    }
+  }
+})
+
